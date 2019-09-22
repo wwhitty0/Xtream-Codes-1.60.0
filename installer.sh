@@ -1,4 +1,4 @@
-# iptvpanel.net
+# Revive Tv
 
 
 #!/bin/bash
