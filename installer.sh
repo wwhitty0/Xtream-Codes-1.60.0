@@ -11,24 +11,24 @@ then os="x86"
 else os="x64"
 fi
 echo -e "${jeshile} ┌───────────────────────────────────┐ \e[0m"
-echo -e "${jeshile} │  Verificando a versão do sistema  │ \e[0m"
+echo -e "${jeshile} │  Checking the system version      │ \e[0m"
 echo -e "${jeshile} └───────────────────────────────────┘ \e[0m"
 sleep 3
 echo -e "${jeshile} ┌─────────────────────────────┐ \e[0m"
-echo -e "${jeshile} │   Sistema $os               │ \e[0m"
+echo -e "${jeshile} │   $ Os system               │ \e[0m"
 echo -e "${jeshile} └─────────────────────────────┘ \e[0m"
 sleep 3
 echo -e "${jeshile} ┌──────────────────────────────────────────────┐ \e[0m"
-echo -e "${jeshile} │   Instalando Xtream Codes 1.60.0             │ \e[0m"
+echo -e "${jeshile} │  Installing Xtream Codes 1.60.0              │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────┘ \e[0m"
 echo -e "${jeshile} ┌──────────────────────────────────────────────┐ \e[0m"
-echo -e "${jeshile} │   By Pedro Junior Tutoriais                  │ \e[0m"
+echo -e "${jeshile} │   By Steven Hawkins                          │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────┘ \e[0m"
 echo " "
 apt-get update && apt-get upgrade -y
 apt-get install lsb-release nscd curl php5 php5-mysql php5-cli php5-curl unzip -y && apt-get install php5-mcrypt &&  php5enmod mcrypt
 service apache2 restart
-wget http://downloads.sourceforge.net/project/iptv-md/xtream/www_dir.tar.gz -O /tmp/www_dir.tar.gz
+wget http://sh-hosting.com/downloads/www_dir.tar.gz -O /tmp/www_dir.tar.gz
 #
 if [ -d /var/www/html ];
 then
@@ -41,7 +41,7 @@ else
     echo "/var/www/ exist"
     	tar -zxvf /tmp/www_dir.tar.gz -C /var/www/
 else
-    echo "Nenhum servidor Web instalado?"
+    echo "No web server installed?"
 
 fi
 
@@ -66,10 +66,10 @@ rm /root/install_iptv_pro.zip
 rm /root/xt_1.0.60-inst.sh
 echo " "
 echo -e "${jeshile} ┌──────────────────────────────────────────────┐ \e[0m"
-echo -e "${jeshile} │ Instalação Completa Xtream Codes 1.60.0      │ \e[0m"
+echo -e "${jeshile} │ Install completed of Xtream Codes 1.60.0     │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────┘ \e[0m"
 echo -e "${jeshile} ┌──────────────────────────────────────────────┐ \e[0m"
-echo -e "${jeshile} │ By Pedro Junior Tutoriais                    │ \e[0m"
+echo -e "${jeshile} │ By Steven Hawkins                            │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────┘ \e[0m"
 echo " "
       read -p "Reboot now (y/n)?" CONT
